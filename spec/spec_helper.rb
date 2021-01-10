@@ -100,3 +100,8 @@ RSpec.configure do |config|
   Kernel.srand config.seed
 =end
 end
+require 'simplecov'
+SimpleCov.start
+
+require 'codecov'
+SimpleCov.formatter = SimpleCov::Formatter::Codecov
